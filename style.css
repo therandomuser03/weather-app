@@ -24,8 +24,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(./bg-pic.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .app-wrap {
