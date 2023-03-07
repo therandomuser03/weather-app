@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Weather App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="app-main">
-    <div class="searchInputBox">
-      <input type="text" id="input-box" class="input-box" placeholder="Enter city : " autocomplete="off">
+    <div class="app-wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Enter the city name..."/>
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">City, State</div>
+                <div class="date">Day  Date  Year</div>
+            </section>
+            <div class="current">
+                <div class="temp"><span>℃</span></div>
+                <div class="weather">Weather</div>
+                <div class="hilow">℃ / ℃</div>
+            </div>
+        </main>
     </div>
-
-    <div class="weather-body">
-      <div class="location-details">
-        <div class="city" id="city">Kolkata, IN</div>
-        <div class="date" id="date">07 March 2023, Tuesday</div>
-      </div>
-
-      <div class="weather-status">
-        <div class="temp" id="temp">34&deg;</div>
-        <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
-        <div class="weather" id="weather">Clear</div>
-        <div class="img"></div>
-      </div>
-    </div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
