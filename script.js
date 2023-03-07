@@ -3,6 +3,13 @@ const api = {
     base: "https://api.openweathermap.org/data/2.5/"
 }
 
+const setHeight = () => {
+    const currentHeight = window.innerHeight;
+    document.body.style.height = `${currentHeight}px`;
+};
+window.addEventListener("resize", setHeight);
+setHeight;
+
 const searchBox = document.querySelector('.search-box');
 searchBox.addEventListener('keypress',setQuery);
 
