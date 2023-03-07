@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./bg-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    padding: 50px 15px 15px;
+}
+
+header input {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #FFF;
+    border-radius: 50px;
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location .date {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.current .temp {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 9;
+    margin: 25px;
+    text-shadow: 0.2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp span {
+    font-weight: 500;
+}
+
+.current .weather {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.current .hilow {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
